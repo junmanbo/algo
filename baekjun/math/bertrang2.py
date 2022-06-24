@@ -1,9 +1,9 @@
 import time
 
-
 def get_prime(n, prime_numbers):
+    rn = n ** 0.5
     for i in prime_numbers:
-        if i >= n:
+        if i > rn:
             return True
         elif n % i == 0:
             return False
